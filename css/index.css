@@ -1,0 +1,248 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+     background-image: url(../gambar/navbarhome.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* laptop */
+@media only screen and (min-width:769px) {
+.container-navbar {
+    height: 15vh;
+    /* background-image: url(../gambar/navbarhome.jpg);
+    background-repeat: no-repeat; */
+    background-color:white;
+    color: black;
+    z-index: 1;
+   
+}
+.navbar {
+    width: 100%;
+    margin: 0px;
+    height: 15vh;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* backdrop-filter:blur(10px);
+    border: 1px solid black;
+    border-radius: 20px; */
+    align-items: center;
+    border-bottom: 1px black solid;
+    box-sizing: border-box;
+}
+.navbar label, #humburger {
+    display: none;
+}
+.navbar-merk {
+    margin-left: 10vh;
+}
+.navbar-menu ul{
+list-style: none;
+display: flex;
+}
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-right: 10vh;
+    transition: 0.3s all ease-in-out;
+    font-weight: bold;
+}
+.navbar-menu a:hover {
+color: palevioletred;
+text-decoration: underline;
+
+}
+
+.header p {
+    font-size: 3vh;
+    line-height: 4vh;
+}
+.container-header {
+    padding: 5vh;
+    margin: 0 auto;
+    width: 95%;
+    /* background-color: rgb(182, 182, 182); */
+   background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 10px;
+     box-sizing: border-box;
+}
+hr {
+    border: 1px solid black;
+     width: 95%;
+    margin: 1vh auto;
+}
+.header {
+    width: 100%;
+    margin: auto;
+    padding: 8vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 8vh;
+    
+    
+
+}
+.header-text {
+    width: 50%;
+}
+.header-img {
+    width:40%;
+    
+    
+    
+    
+}
+.header-img img {
+    width: 100%;
+    box-shadow: 0px 0px 20px -10px;
+    transition: 0.3s all ease-in-out;
+    border-radius: 10px;
+    
+}
+.header-img img:hover {
+    box-shadow: 0px -3px 8px 4px pink;
+}
+}
+
+
+/* smartphone */
+@media only screen and (max-width:768px) {
+body {
+     background-image: url(../gambar/navbarhome.jpg);
+    background-attachment:;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .container-navbar {
+    height: 7vh;
+    /* background-image: url(../gambar/navbarhome.jpg);
+    background-repeat: no-repeat; */
+    background-color:white;
+    color: black;
+   
+}
+.navbar {
+    width: 100%;
+    margin: 0px;
+    height: 7vh;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+
+}
+.navbar label {
+    display: block;
+    font-style: normal;
+    font-size: 30px;
+    padding: 10px;
+    color: black;
+}
+
+.navbar input {
+    display: none;
+}
+.navbar-menu ul {
+    display: block;
+    line-height: 7vh;
+    list-style: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 7vh;
+    
+}
+.navbar-merk {
+    position: absolute;
+    font-size: 1.5vh;
+    line-height: 7vh;
+    right: 2vh;
+}
+.navbar-menu ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: block;
+    font-weight: bold;
+    font-size: 1.5vh;
+    padding: 0 1vh;
+    border-bottom: 1px solid black;
+}
+.navbar nav {
+    display: none;
+}
+.navbar #humburger:checked ~ nav {
+    display: flex;
+}
+.navbar-menu ul li :hover {
+    background-color: pink;
+    color: white;
+}
+.navbar-menu ul li:active {
+    background-color: pink;
+    color: white;
+}
+.header p {
+    font-size: 0.9vh;
+    line-height: 1.5vh;
+}
+.container-header {
+    
+    margin: 0 auto;
+    width: 95%;
+    /* background-color: rgb(182, 182, 182); */
+   background-color: rgba(255, 255, 255, 0.199);
+    border-radius: 10px;
+     box-sizing: border-box;
+     
+}
+hr {
+    border: 1px solid black;
+     width: 95%;
+    margin: 1vh auto;
+}
+.header {
+    width: 100%;
+    margin: auto;
+    padding: 2vh;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    
+
+}
+.header-text {
+    width: 50%;
+    
+}
+
+.header-img {
+    width:40%;
+    
+    
+    
+    
+}
+.header-img img {
+    width: 100%;
+    box-shadow: 0px 0px 20px -10px;
+    border-radius: 10px;
+    transition: 0.3s all ease-in-out;
+    
+}
+.header-img img:hover {
+     box-shadow: 0px -3px 8px 4px pink;
+}
+}
